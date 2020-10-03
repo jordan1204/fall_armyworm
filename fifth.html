@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+      <meta charset="utf-8">
+      <link rel="icon" type="image/png" href="img/caterpillar.png">
+      <title>測驗</title>
+      
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <script class="com" src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script class="com" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script class="com" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+      
+      <link class="mmmm" rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script class="mmmm" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script class="mmmm" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel=stylesheet type="text/css" href="css/fifth.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous"></link>
+    </head>
+    <style>
+      .list-group-item a:link{
+      color:green;
+  }
+  .list-group-item a:visited{
+      color:green;
+  }
+  </style>
+    <body>
+      <div id="header">
+        <a href="./index.html" id="butterfly_a"><img src="img/icon.png" style="max-width:13vw; max-height:13vw;"/></a>
+       <h1>秋行軍蟲的世界</h1>
+       <img src="img/beetles.png" id="worm"/>
+   </div>
+   <i class="fas fa-list-ul" id="circle" style="font-size:24px;"></i>
+   <ul class="list-group" style="position:absolute; top:23vh; display:none; font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; ">
+    <li class="list-group-item " role="button" style="border:1px solid; border-radius:15px; border-color:green;"><a href="first.html" data-ajax="false">簡介</a></li>
+    <ul>
+      <li class="list-group-item btn" role="button" style="border:1px solid; border-radius:15px; border-color:green;"><a href="first-1.html" data-ajax="false">食性</a></li>
+      <li class="list-group-item btn" role="button" style="border:1px solid; border-radius:15px; border-color:green;"><a href="first-2.html" data-ajax="false">習性</a></li>
+    </ul>
+    <li class="list-group-item btn" role="button" style="border:1px solid; border-radius:15px; border-color:green;"><a href="second.html" data-ajax="false">棲地</a></li>
+    <li class="list-group-item btn" role="button" style="border:1px solid; border-radius:15px; border-color:green;"><a href="third.html" data-ajax="false">生活史</a></li>
+    <li class="list-group-item btn" role="button" style="border:1px solid; border-radius:15px; border-color:green;"><a href="fourth.html" data-ajax="false">危害</a></li>
+    <li class="list-group-item btn" role="button" style="border:1px solid; border-radius:15px; border-color:green;"><a href="#" data-ajax="false">測驗</a></li>
+    <li class="list-group-item btn" role="button" style="border:1px solid; border-radius:15px; border-color:green;"><a href="sixth.html" data-ajax="false">製作團隊</a></li>
+    <li class="list-group-item btn" role="button" style="border:1px solid; border-radius:15px; border-color:green;"><a href="seventh.html" data-ajax="false">參考資料</a></li>
+  </ul>
+        <div id="content">
+          <div id="menu">
+          <ul style="grid-column-start:1; grid-column-end:2; grid-row-start:1; grid-row-end: 2;">
+            <li style="list-style-image:url('img/worm.png');" class="navmenu"><a style="border-radius:30px; font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; font-size:120%; width:12vw;"class="btn btn-outline-success navmenu" href="first.html" data-ajax="false" role="button">簡介</a>
+              <ul> 
+                <li style="list-style-image:url('img/worm.png'); "><a style="border-radius:30px;font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; width:9vw; font-size:120%; margin-bottom: 3vh; margin-top:3vh;" class="btn btn-outline-success" href="./first-1.html" data-ajax="false" role="button">食性</a></li> 
+                <li style="list-style-image:url('img/worm.png');"><a style="border-radius:30px; font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; width:9vw; font-size:120%;" class="btn btn-outline-success" href="./first-2.html" data-ajax="false" role="button">習性</a></li> 
+              </ul>
+            </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+        <ul style="grid-column-start:1; grid-column-end:2; grid-row-start:2; grid-row-end: 3;">
+          <li style="list-style-image:url('img/worm.png');" class="navmenu"><a style="border-radius:30px; font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; width:12vw; font-size:120%;"class="btn btn-outline-success navmenu" href="second.html" data-ajax="false" role="button">棲地</a>
+            <ul> 
+              <li style="list-style-image:url('img/worm.png');"><a style="border-radius:30px; font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; width:9vw; margin-top:3vh; font-size:120%;"  class="btn btn-outline-success " href="second-1.html" data-ajax="false" role="button">特徵</a></li> 
+            </ul> 
+          </li>
+          </ul>
+        </td>
+        </tr>
+        <tr>
+          <td>
+        <ul>
+            <li style="list-style-image:url('img/worm.png');"><a style="border-radius:30px; font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; width:12vw; font-size:120%;" class="btn btn-outline-success" href="third.html" data-ajax="false" role="button">生活史</a></li>
+          </ul>
+        </td>
+        </tr>
+        <tr>
+          <td>
+          <ul>
+            <li style="list-style-image:url('img/worm.png');" class="navmenu"><a style="border-radius:30px; font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; width:12vw; font-size:120%;"class="btn btn-outline-success navmenu" href="fourth.html" data-ajax="false" role="button">危害</a>
+              <ul> 
+                <li style="list-style-image:url('img/worm.png');"><a style="border-radius:30px; font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; width:9vw; margin-bottom: 3vh; margin-top:3vh; font-size:120%;" class="btn btn-outline-success" href="fourth-1.html" data-ajax="false" role="button">侵台史</a></li> 
+                <li style="list-style-image:url('img/worm.png');"><a style="border-radius:30px; font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; width:9vw; margin-bottom: 3vh; font-size:120%;" class="btn btn-outline-success" href="fourth-2.html" data-ajax="false" role="button">天敵</a></li> 
+                <li style="list-style-image:url('img/worm.png');"><a style="border-radius:30px; font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; width:9vw; font-size:120%;" class="btn btn-outline-success" href="fourth-3.html" data-ajax="false" role="button">防治</a></li>
+              </ul> 
+            </li>
+          </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          <ul>
+            <li style="list-style-image:url('img/worm.png');" class="navmenu"><a style="border-radius:30px; font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; width:12vw; font-size:120%;" class="btn btn-outline-success" href="#" data-ajax="false" role="button">測驗</a>
+            <ul> 
+              <li style="list-style-image:url('img/worm.png'); "><a style="border-radius:30px;font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; width:9vw; margin-bottom: 3vh; margin-top:3vh; font-size:120%;" class="btn btn-outline-success" href="QnA/Q1.html" data-ajax="false" role="button">問答</a></li> 
+              <li style="list-style-image:url('img/worm.png');"><a style="border-radius:30px; font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; width:9vw; font-size:120%;" class="btn btn-outline-success" href="Quizzz/test1.html" data-ajax="false" role="button">找碴</a></li> 
+            </ul> 
+          </li>
+          </ul>
+        </td>
+        </tr>
+          <tr>
+            <td>
+            <ul>
+              <li style="list-style-image:url('img/worm.png');"><a style="border-radius:30px; font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; width:12vw; font-size:120%;" class="btn btn-outline-success" href="sixth.html" data-ajax="false" role="button">製作團隊</a></li>
+            </ul>
+              <ul>
+                <li style="list-style-image:url('img/worm.png');"><a style="border-radius:30px; font-family: 'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; width:12vw; font-size:120%;" class="btn btn-outline-success" href="seventh.html" data-ajax="false" role="button">參考資料</a></li>
+              </ul>
+            </td>
+            </tr>
+            </table>
+    </div>  
+            <div id="vertical"></div>
+            <div style="grid-area:f;">
+              <img src="img/reading1.png" style="float:left; height:10vw; width:10vw; margin-left:15vw; margin-top:8vh;">
+              <div class="dialog-border-bottom-1">&nbsp;&nbsp;嘿!兄弟!你讀完前面的介紹了嗎?</div>
+              <img src="img/reading.png" style="clear:both; float:right; height:10vw; width:10vw;  margin-top:7.3vh; margin-right:15vw;">
+              <div class="dialog-border-bottom-2">&nbsp;&nbsp;哈!經過我的九陰白骨爪，用了8700萬年，終於對前面的介紹成秋行蟲精了!</div>
+              <img src="img/reading1.png" style="clear:both; float:left; height:10vw; width:10vw; margin-left:15vw; margin-top:8vh;">
+              <div class="dialog-border-bottom-3">&nbsp;&nbsp;哦?!好像很牛逼!要不要來個測驗跟找碴來測試你的實力呢?</div>
+              <img src="img/reading.png" id="dialog-4" style="clear:both; float:right; height:10vw; width:10vw;  margin-top:7.3vh; margin-right:15vw;">
+              <div class="dialog-border-bottom-4">&nbsp;&nbsp;好阿!胡怕胡~來決鬥吧!!</div>
+              <a class="btn btn-outline-success" id="button-1" style="clear:both; float:left; font-family:'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; font-size:120%; margin-bottom:5vh; margin-left:15vw; border-radius:30px; width:10vw;" href="QnA/Q1.html" data-ajax="false" role="button" disabled>測驗</a>
+              <a class="btn btn-outline-success" id="button-2" style="float:left; font-family:'DFKai-sb',Microsoft JhengHei,sans-serif; font-weight:bold; font-size:120%; margin-bottom:5vh; margin-left:5vw; border-radius:30px; width:10vw;" href="Quizzz/test1.html" data-ajax="false" role="button" disabled>找碴</a>
+              </div>
+          </div>
+    </body>
+    <script type="text/javascript" src="js/script.js"></script>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        html{
+              cursor:url(warm3.cur), url(https://www2.cs.ccu.edu.tw/~ssh107u/warm3.cur), auto;
+        }
+        body {
+             margin:0;
+             padding:0;
+             background: #000 url(pic/bgd.png) center center fixed no-repeat;
+             -moz-background-size: cover;
+             background-size: cover;  
+        }
+
+        .content {
+            width: 920px;
+            margin: 20px auto 0px auto;
+        }
+        .que-font {
+            font-size: 25px;
+            font-family:Microsoft JhengHei;
+            color: #3f2a14;
+            font-weight: bold;
+        }
+        .ans {
+            width:600px;
+            height:auto;
+            font-size:20px;
+            text-align:left;
+            white-space: pre-wrap;
+            padding: 10px
+        }
+        .again {
+            width:150px;
+            height:auto;
+            font-size:25px;
+            text-align:center;
+            white-space: pre-wrap;
+            padding: 10px
+        }
+        .chi-font {
+            font-size: 50px;
+            font-family:Microsoft JhengHei;
+        }
+    </style>
+
+    <title>問答</title>
+
+    <meta charset="utf-8" />
+    <!--meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"-->
+    <link rel="icon" type="image/png" href="../img/caterpillar.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getArgs() { 
+           
+           var args = new Object(); 
+           var query = location.search.substring(1);
+           var pairs = query.split("&"); 
+           for(var i=0;i<pairs.length;i++) { 
+              var pos = pairs[i].indexOf("="); 
+              if (pos == -1) continue; 
+              var argname = pairs[i].substring(0,pos); 
+              var value = pairs[i].substring(pos+1); 
+              args[argname] = decodeURIComponent(value); 
+           } 
+           return args;  
+        } 
+
+        /*
+        function closewin(){
+            window.location.href="about:blank";
+            window.close();
+            //window.open('', '_self', ''); window.close();
+        }
+        */
+    </script>
+
+</head>
+
+<body>
+    <div class="content">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: rgba(251,248,244,0.8);">
+            <tbody>
+                <tr>
+                    <td>
+                        <table align="center" style="width: 810px;">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div>
+                                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="765">
+                                                <tbody>
+                                                    <tr>
+                                                        <td height="150">
+                                                            <span>
+                                                                <div>
+                                                                    <img src="pic/qq.png">
+                                                                </div>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table width="765" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="400">
+                                                            <img src="pic/title.png" width="390">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="805">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center">
+                                                            <span>
+                                                                <div>
+                                                                    <script type="text/javascript">
+                                                                      var args = getArgs(); 
+                                                                         if (args.A<=60) 
+                                                                      document.write('<p align=center style="font-size:100px;">'+'恭喜獲得 '+ '<span style="font-weight: bold; color: red">' +args.A+ '</span>' +' 分'+'</p>' + '<p align=center style="font-size:35px; color: #660000">' + '看來你離秋行軍蟲專家還有一段路哦...'+ '<br>' +'再去修煉一下吧！' + '</p>');
+
+                                                                          else if (args.A<=80) 
+                                                                      document.write('<p align=center style="font-size:100px;">'+'恭喜獲得 '+ '<span style="font-weight: bold; color: red">' +args.A+ '</span>' +' 分'+'</p>' + '<p align=center style="font-size:35px; color: #660000">' + '離專家這個頭銜不遠了！'+ '<br>' +'加油啊！！！' + '</p>');
+
+                                                                          else if (args.A<=100) 
+                                                                      document.write('<p align=center style="font-size:100px;">'+'恭喜獲得 '+ '<span style="font-weight: bold; color: red">' +args.A+ '</span>' +' 分'+'</p>' + '<p align=center style="font-size:35px; color: #660000">' + '你真是百年難得一見的秋行軍蟲專家耶！'+ '<br>' +'快來幫幫台灣吧TAT' + '</p>');
+                                                                    </script>
+                                                                </div>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top">
+                                                            <table style="width:100%;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td height="20"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="240"></td>
+                                                                        <td>
+                                                                            <input type="button" onclick="javascript:location.href='Q1.html'" value="再試一次" class="again">
+                                                                        </td>
+                                                                        <td width="20"></td>
+                                                                        <td>
+                                                                            <input type="button" value="回到主頁" onclick="javascript:location.href='../first.html'"   class="again">
+                                                                        </td>
+                                                                        <td width="240"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td height="20"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+          <tbody>
+            <tr>
+              <td height="20"></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

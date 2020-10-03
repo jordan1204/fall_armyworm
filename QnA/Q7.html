@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        html{
+            cursor:url(warm3.cur), url(https://www2.cs.ccu.edu.tw/~ssh107u/warm3.cur), auto;
+        }
+        body {
+             margin:0;
+             padding:0;
+             background: #000 url(pic/bgd.png) center center fixed no-repeat;
+             -moz-background-size: cover;
+             background-size: cover;  
+        }
+
+        .content {
+            width: 920px;
+            margin: 20px auto 0px auto;
+        }
+        .que-font {
+            font-size: 25px;
+            font-family:Microsoft JhengHei;
+            color: #3f2a14;
+            font-weight: bold;
+        }
+        .ans {
+            width:600px;
+            height:auto;
+            font-size:20px;
+            text-align:left;
+            white-space: pre-wrap;
+            padding: 10px
+        }
+        .chi-font {
+            font-size: 50px;
+            font-family:Microsoft JhengHei;
+        }
+    </style>
+
+    <title>問答</title>
+
+    <meta charset="utf-8" />
+    <!--meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"-->
+    <link rel="icon" type="image/png" href="../img/caterpillar.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getArgs() { 
+           
+           var args = new Object(); 
+           var query = location.search.substring(1);
+           var pairs = query.split("&"); 
+           for(var i=0;i<pairs.length;i++) { 
+              var pos = pairs[i].indexOf("="); 
+              if (pos == -1) continue; 
+              var argname = pairs[i].substring(0,pos); 
+              var value = pairs[i].substring(pos+1); 
+              args[argname] = decodeURIComponent(value); 
+           } 
+           return args; 
+        } 
+
+        function truef(){
+
+            var args = getArgs(); 
+
+            count = 10;
+
+            count = parseInt(args.A)+count; 
+            window.location.href = 'Q8.html?A='+count;  
+
+        }
+
+        function falf(){
+
+            var args = getArgs(); 
+
+            count = 0;
+
+            count = parseInt(args.A)+count; 
+            window.location.href = 'Q8.html?A='+count;  
+  
+        }
+    </script>
+    
+</head>
+
+<body>
+    <div class="content">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: rgba(251,248,244,0.8);">
+            <tbody>
+                <tr>
+                    <td>
+                        <table align="center" style="width: 810px;">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <table width="765" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="400">
+                                                            <img src="pic/title.png" width="390">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="765">
+                                                <tbody>
+                                                    <tr>
+                                                        <td height="150">
+                                                            <span>
+                                                                <div>
+                                                                    <img src="pic/P/p7.png">
+                                                                </div>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <br>
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="805">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="130" align="center">
+                                                            <span>
+                                                                <div>
+                                                                    <img src="pic/Q/Q7.png" width="75">
+                                                                </div>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span>
+                                                                <div class="que-font">
+                                                                    請問秋行軍蟲喜歡什麼環境與食物？
+                                                                </div>
+                                                            </span>
+                                                        </td>
+                                                        <td width="20"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="130" valign="top"></td>
+                                                        <td valign="top">
+                                                            <table style="width:100%;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td height="20"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input type="button" onclick="falf()" value="(A)蓋棉被吹冷氣，最好搭配西瓜跟冰品" class="ans">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input type="button" onclick="truef()" value="(B)喜歡躲藏在土中、嫩葉處，喜好玉米或水稻" class="ans">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input type="button" onclick="falf()" value="(C)水裡，吃孑孓" class="ans">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input type="button" onclick="falf()" value="(D)樹幹裡，吃蚜蟲" class="ans">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="20"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+          <tbody>
+            <tr>
+              <td height="20"></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../img/caterpillar.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>大家來找碴</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script type="text/javascript">
+     
+        function mistake(){
+            alert('不是這裡喔~再試試看吧!');
+        }
+
+        function correct1(){
+            console.log('clicked')
+            var left_head=document.getElementById('left_head')
+            left_head.style.display="inline";
+            right_head.style.display="inline";
+            alert('恭喜答對了!\n秋行軍蟲的頭部是黑褐色的!');
+        }
+
+        function correct2(){
+            console.log('clicked')
+            var right_head=document.getElementById('right_head')
+            right_head.style.display="inline";
+            left_head.style.display="inline";
+            alert('恭喜答對了!\n斜紋夜盜蛾的頭部是黃褐色的!');
+        }
+
+        function correct3(){
+            console.log('clicked')
+            var left_tail=document.getElementById('left_tail')
+            left_tail.style.display="inline";
+            right_tail.style.display="inline";
+            alert('恭喜答對了!\n秋行軍蟲的尾端有四個明顯呈方形的黑點!');
+        }
+
+        function correct4(){
+            console.log('clicked')
+            var right_tail=document.getElementById('right_tail')
+            right_tail.style.display="inline";
+            left_tail.style.display="inline";
+            alert('恭喜答對了!\n斜紋夜盜蛾的尾端只有兩個黑點!');
+        }
+
+        function correct5(){
+            console.log('clicked')
+            var right_back=document.getElementById('right_back')
+            left_back.style.display="inline";
+            right_back.style.display="inline";
+            alert('恭喜答對了!\n秋行軍蟲的背部斑點規律分布!');
+        }
+
+        function correct6(){
+            console.log('clicked')
+            var right_back=document.getElementById('right_back')
+            left_back.style.display="inline";
+            right_back.style.display="inline";
+            alert('恭喜答對了!\n斜紋夜盜蛾的背部有兩個明顯黑點!');
+        }
+
+    </script>
+
+    <style type="text/css">
+
+        /*basic*/
+        .pic{
+            position:absolute;
+            top: 30%;
+            left: 15%;
+        }
+
+        #a{
+            border-radius: 10%;
+        }
+
+        .pic1{
+            position:absolute;
+            top: 30%;
+            left: 53%;
+        }
+
+        #b{
+            border-radius: 10%;
+        }
+
+        #c{
+            position:absolute;
+            top:22%;
+            left:26%;
+            color:black;
+            font-family: Microsoft JhengHei,Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #d{
+            position:absolute;
+            top:22%;
+            left:62%;
+            color:black;
+            font-family: Microsoft JhengHei,Georgia, 'Times New Roman', Times, serif;
+        }
+
+        /*head*/
+        #left_head{ 
+            position:absolute;
+            top: 65%;
+            left: 25%;
+        }
+
+        #left_head_b{ 
+            position:absolute;
+            top: 67%;
+            left: 27%;
+            z-index:3 ;
+            opacity: 0.0;
+        }
+
+        #right_head{ 
+            position:absolute;
+            top: 43%;
+            left: 55%;
+        }
+
+        #right_head_b{ 
+            position:absolute;
+            top: 45%;
+            left: 57%;
+            z-index:3 ;
+            opacity: 0.0;
+        }
+
+        /*tail*/
+        #left_tail{ 
+            position:absolute;
+            top: 52%;
+            left: 18%;
+        }
+
+        #left_tail_b{ 
+            position:absolute;
+            top: 54%;
+            left: 20%;
+            opacity: 0.0;
+        }
+
+        #right_tail{ 
+            position:absolute;
+            top: 60%;
+            left: 70%;
+        }
+
+        #right_tail_b{ 
+            position:absolute;
+            top: 62%;
+            left: 72%;
+            z-index:3 ;
+            opacity: 0.0;
+        }
+
+        /*back*/
+        #left_back{ 
+            position:absolute;
+            top: 54%;
+            left: 31.5%;
+        }
+
+        #left_back_b{ 
+            position:absolute;
+            top: 56%;
+            left: 33%;
+            z-index:3 ;
+            opacity: 0.0;
+        }
+
+        #right_back{ 
+            position:absolute;
+            top: 48%;
+            left: 61%;
+        }
+
+        #right_back_b{ 
+            position:absolute;
+            top: 51%;
+            left: 63%;
+            z-index:3 ;
+            opacity: 0.0;
+        }
+
+        /*background*/
+        #heading{
+            position:absolute ;
+            top:5%;
+            left:40%;
+            text-align: center;
+        }
+
+        h3{
+            position:absolute ;
+            top:16%;
+            left:39%;
+            text-align: center;
+            color:rgb(59, 85, 110);
+            font-family: Microsoft JhengHei,Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #glass{
+            position:absolute ;
+            top:52%;
+            left:81%;
+        }
+
+        body{
+            background-image: url('back7.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <img src="h2.gif" id="heading">   
+    <img src="g.png" id="glass" height="240">
+
+    <h3>兩隻蟲有三個不同之處~請大家幫忙找出來!</h3>
+    <h3 id="c">《秋行軍蟲》</h3>
+    <h3 id="d">《斜紋夜盜蛾》</h3>
+
+    <div class="pic" onclick="mistake()" >
+        <img src="army1.jpg" id="a" width="400" height="300">
+   </div>
+
+   <div class="pic1" onclick="mistake()">
+           <img src="litura3_1.jpg" id="b" width="400" height="300">
+   </div>
+    
+    <div id="left_head"><img src="circle.png"></div>
+    <div id="left_head_b" onclick="correct1()">
+            <img src="black.png" >
+    </div>
+    
+    <div id="right_head"><img src="circle.png" width="100"></div>
+    <div id="right_head_b" onclick="correct2()" >
+            <img src="black.png" width="50">
+    </div>
+
+    <div id="left_tail"><img src="circle.png"></div>
+    <div id="left_tail_b" onclick="correct3()">
+            <img src="black.png">
+    </div>
+
+    <div id="right_tail"><img src="circle.png"></div>
+    <div id="right_tail_b" onclick="correct4()">
+            <img src="black.png" >
+    </div>
+
+    <div id="left_back"><img src="circle.png" width="110"></div>
+    <div id="left_back_b" onclick="correct5()">
+            <img src="black.png" >
+    </div>
+
+    <div id="right_back"><img src="circle.png"></div>
+    <div id="right_back_b" onclick="correct6()">
+            <img src="black.png" >
+    </div>
+
+    <script type="text/javascript">
+
+        left_tail.style.display="none";
+        right_tail.style.display="none";
+        left_head.style.display="none";
+        right_head.style.display="none";
+        left_back.style.display="none";
+        right_back.style.display="none";
+
+    </script>
+
+</body>
+
+</html>
